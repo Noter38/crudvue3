@@ -1,11 +1,26 @@
-
+<!-- src/components/FormComponent.vue -->
+<!-- src/App.vue -->
 <template>
- <contador></contador>
+  <div id="app">
+    <h1>Aplicación CRUD con Vue.js</h1>
+    <CrudComponent />
+  </div>
 </template>
-<script setup>
-import contador from './components/contador.vue';
+
+<script>
+import CrudComponent from './components/CrudComponent.vue';
+
+export default {
+  components: {
+    CrudComponent,
+  },
+};
 </script>
 
-<style scoped>
-
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
 </style>
